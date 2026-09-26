@@ -5,149 +5,410 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Markets Dashboard</title>
 
-  <script type="module"
-    src="https://widgets.tradingview-widget.com/w/en/tv-tickers.js">
-  </script>
+  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js"></script>
+  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-market-data.js"></script>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #111827;
     }
 
-    .container {
-      max-width: 1400px;
-      margin: auto;
-      padding: 20px;
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1450px;
+      margin: 0 auto;
+      padding: 22px;
     }
 
     h1 {
-      margin-bottom: 20px;
+      margin: 0 0 16px;
+      font-size: 28px;
     }
 
     h2 {
-      margin-top: 35px;
+      margin: 30px 0 12px;
+      font-size: 20px;
     }
 
     .card {
-      background: white;
-      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
       padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+      margin-bottom: 18px;
+      overflow: hidden;
+    }
+
+    .brief-meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .brief {
+      white-space: pre-wrap;
+      font-size: 15px;
+    }
+
+    .placeholder {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .section-block[hidden] {
+      display: none;
+    }
+
+    .source-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .source-list li {
+      margin: 9px 0;
+    }
+
+    .source-list a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .source-list a:hover {
+      text-decoration: underline;
+    }
+
+    .small-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    tv-ticker-tape,
+    tv-market-data {
+      display: block;
+      width: 100%;
+    }
+
+    .chart-wrap {
+      width: 100%;
+      min-height: 650px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 12px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+
+      .card {
+        padding: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <main class="page">
 
-<div class="container">
+    <h1>📈 Markets Dashboard</h1>
 
-  <h1>📈 Markets Dashboard</h1>
-
-  <!-- MARKET TICKERS -->
-  <div class="card">
-    <tv-tickers
-      symbols="FOREXCOM:SPXUSD,FOREXCOM:NSXUSD,FOREXCOM:UKXGBP,OANDA:XAUUSD,TVC:USOIL,TVC:US10Y,FX:GBPUSD,FX:EURUSD,BITSTAMP:BTCUSD"
-      hide-chart>
-    </tv-tickers>
-  </div>
-
-  <h2>📰 Market Brief</h2>
-
-  <div class="card">
-    <p>
-      Your automated daily market brief will appear here.
-    </p>
-  </div>
-
-  <h2>🌍 Today's Top Stories</h2>
-
-  <div class="card">
-
-    <!-- TradingView Top Stories -->
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
-        async>
-      {
-        "feedMode": "all_symbols",
-        "colorTheme": "light",
-        "isTransparent": false,
-        "displayMode": "regular",
-        "width": "100%",
-        "height": 550,
-        "locale": "en"
-      }
-      </script>
-
+    <!-- MOVING MARKET BANNER -->
+    <div class="card">
+      <tv-ticker-tape
+        symbols="FOREXCOM:SPXUSD,FOREXCOM:NSXUSD,FOREXCOM:UKXGBP,OANDA:XAUUSD,TVC:USOIL,FX:GBPUSD,FX:EURUSD,BITSTAMP:BTCUSD"
+        direction="horizontal">
+      </tv-ticker-tape>
     </div>
 
-  </div>
-
-  <h2>📅 Economic Calendar</h2>
-
-  <div class="card">
-
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-events.js"
-        async>
-      {
-        "colorTheme": "light",
-        "isTransparent": false,
-        "locale": "en",
-        "countryFilter": "gb,us,eu,de,fr,cn,jp,ca,au",
-        "importanceFilter": "1",
-        "width": "100%",
-        "height": 600
-      }
-      </script>
-
+    <!-- AI MARKET BRIEF -->
+    <div id="brief-block" class="section-block" hidden>
+      <h2>📰 Market Brief</h2>
+      <section class="card">
+        <div id="brief-meta" class="brief-meta"></div>
+        <div id="brief" class="brief"></div>
+        <div class="small-note">
+          Educational summary only. It explains reported market developments and is not investment advice.
+        </div>
+      </section>
     </div>
 
-  </div>
+    <!-- WORLD NEWS -->
+    <div id="world-news-block" class="section-block" hidden>
+      <h2>🌎 World News</h2>
+      <section class="card">
+        <ul id="world-news" class="source-list"></ul>
+        <div class="small-note">
+          Headlines are collected from established news publishers via RSS/search feeds. Open the original article for full context.
+        </div>
+      </section>
+    </div>
 
-  <h2>📈 Main Chart</h2>
-
-  <div class="card">
-
-    <div class="tradingview-widget-container">
-      <div id="tradingview_chart"></div>
-
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/tv.js">
-      </script>
-
-      <script type="text/javascript">
-        new TradingView.widget({
+    <!-- MARKET NEWS -->
+    <h2>📰 Market News</h2>
+    <section class="card">
+      <div class="tradingview-widget-container" style="width:100%">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+          async>
+        {
+          "feedMode": "all_symbols",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "regular",
           "width": "100%",
-          "height": 650,
-          "symbol": "FOREXCOM:SPXUSD",
-          "interval": "D",
-          "timezone": "Europe/London",
-          "theme": "light",
-          "style": "1",
-          "locale": "en",
-          "allow_symbol_change": true,
-          "container_id": "tradingview_chart"
-        });
-      </script>
+          "height": 520,
+          "locale": "en"
+        }
+        </script>
+      </div>
+    </section>
 
+    <!-- WHAT'S COMING -->
+    <h2>🚨 What's Coming</h2>
+    <section class="card">
+      <div class="tradingview-widget-container" style="width:100%">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-events.js"
+          async>
+        {
+          "colorTheme": "light",
+          "isTransparent": false,
+          "locale": "en",
+          "countryFilter": "gb,us,eu,de,fr,cn,jp,ca,au",
+          "importanceFilter": "1",
+          "width": "100%",
+          "height": 600
+        }
+        </script>
+      </div>
+
+      <div class="small-note">
+        Focus on high-importance events. Actual = what was reported; Forecast = what economists expected; Prior = the previous reading.
+      </div>
+    </section>
+
+    <!-- COMPANY EVENTS -->
+    <div id="company-events-block" class="section-block" hidden>
+      <h2>🏢 Company Events</h2>
+      <section class="card">
+        <div id="company-events"></div>
+
+        <div class="small-note">
+          This section is limited to companies in your Watchlist. It focuses on upcoming earnings reports and shows the expected reporting session when available.
+        </div>
+      </section>
     </div>
 
-  </div>
+    <!-- MARKET DATA -->
+    <h2>📊 Market Data</h2>
+    <section class="card">
+      <tv-market-data
+        symbol-sectors='[
+          {"sectionName":"Indices","symbols":["FOREXCOM:SPXUSD","FOREXCOM:NSXUSD","FOREXCOM:DJI","INDEX:DEU40","FOREXCOM:UKXGBP"]},
+          {"sectionName":"Commodities","symbols":["OANDA:XAUUSD","TVC:USOIL"]},
+          {"sectionName":"Bonds","symbols":["TVC:US10Y"]},
+          {"sectionName":"Forex","symbols":["FX:GBPUSD","FX:EURUSD"]},
+          {"sectionName":"Crypto","symbols":["BITSTAMP:BTCUSD"]}
+        ]'>
+      </tv-market-data>
+    </section>
 
-</div>
+    <!-- INTERACTIVE CHART -->
+    <h2>📈 Interactive Chart</h2>
+    <section class="card">
+      <div id="tradingview_chart" class="chart-wrap"></div>
+    </section>
+
+    <!-- WATCHLIST -->
+    <h2>📚 My Watchlist</h2>
+    <section class="card">
+      <p>
+        Your Notion Watchlist remains the master list of the 26 markets, companies and assets you want to follow.
+      </p>
+
+      <p class="small-note">
+        The dashboard above is for understanding what is happening today; the Watchlist is for deciding what you want to keep learning about.
+      </p>
+    </section>
+
+  </main>
+
+  <script src="https://s3.tradingview.com/tv.js"></script>
+
+  <script>
+    new TradingView.widget({
+      "width": "100%",
+      "height": 650,
+      "symbol": "FOREXCOM:SPXUSD",
+      "interval": "D",
+      "timezone": "Europe/London",
+      "theme": "light",
+      "style": "1",
+      "locale": "en",
+      "allow_symbol_change": true,
+      "hide_side_toolbar": false,
+      "hide_top_toolbar": false,
+      "hide_legend": false,
+      "withdateranges": true,
+      "container_id": "tradingview_chart"
+    });
+  </script>
+
+  <script>
+    async function loadBrief() {
+      try {
+        const response = await fetch("data/brief.json", {
+          cache: "no-store"
+        });
+
+        if (!response.ok) throw new Error("brief.json not found");
+
+        const data = await response.json();
+
+        if (!data.brief || !data.brief.trim()) return;
+
+        document.getElementById("brief-meta").textContent =
+          data.updated_at
+            ? "Updated " + data.updated_at
+            : "Latest available brief";
+
+        document.getElementById("brief").textContent = data.brief;
+
+        document.getElementById("brief-block").hidden = false;
+
+      } catch (error) {
+        // Keep hidden until automated content exists.
+      }
+    }
+
+    async function loadWorldNews() {
+      try {
+        const response = await fetch("data/world-news.json", {
+          cache: "no-store"
+        });
+
+        if (!response.ok) throw new Error("world-news.json not found");
+
+        const data = await response.json();
+
+        const headlines = (data.headlines || []).slice(0, 5);
+
+        if (!headlines.length) return;
+
+        const list = document.getElementById("world-news");
+
+        list.innerHTML = "";
+
+        headlines.forEach(item => {
+          const li = document.createElement("li");
+
+          const a = document.createElement("a");
+
+          a.href = item.url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = item.title;
+
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+
+        document.getElementById("world-news-block").hidden = false;
+
+      } catch (error) {
+        // Keep hidden until automated content exists.
+      }
+    }
+
+    async function loadCompanyEvents() {
+      try {
+        const response = await fetch("data/company-events.json", {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error("company-events.json not found");
+        }
+
+        const data = await response.json();
+
+        if (!data.events || !data.events.length) return;
+
+        const root = document.getElementById("company-events");
+
+        const table = document.createElement("table");
+
+        table.style.width = "100%";
+        table.style.borderCollapse = "collapse";
+
+        const header = document.createElement("tr");
+
+        ["Date", "Company", "Event", "Session"].forEach(text => {
+          const th = document.createElement("th");
+
+          th.textContent = text;
+          th.style.textAlign = "left";
+          th.style.padding = "10px 8px";
+          th.style.borderBottom = "1px solid #e5e7eb";
+
+          header.appendChild(th);
+        });
+
+        table.appendChild(header);
+
+        data.events.forEach(event => {
+          const row = document.createElement("tr");
+
+          [
+            event.date,
+            event.company,
+            "Earnings",
+            event.session || "Time not supplied"
+          ].forEach(value => {
+            const td = document.createElement("td");
+
+            td.textContent = value;
+            td.style.padding = "10px 8px";
+            td.style.borderBottom = "1px solid #f0f1f3";
+
+            row.appendChild(td);
+          });
+
+          table.appendChild(row);
+        });
+
+        root.appendChild(table);
+
+        document.getElementById("company-events-block").hidden = false;
+
+      } catch (error) {
+        // Keep hidden until automated content exists.
+      }
+    }
+
+    loadBrief();
+    loadWorldNews();
+    loadCompanyEvents();
+  </script>
 
 </body>
 </html>
