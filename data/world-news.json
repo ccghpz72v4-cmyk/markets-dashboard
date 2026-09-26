@@ -1,4 +1,35 @@
 {
-  "updated_at": "",
-  "headlines": []
+  "updated_at": "2026-09-26 21:18 UTC",
+  "headlines": [
+    {
+      "title": "Heathrow Airport warns third runway could be delayed by four years",
+      "url": "https://www.bbc.co.uk/news/articles/crx2zz401935o?at_medium=RSS&at_campaign=rss",
+      "description": "The UK's busiest airport cautions it may miss the government target of 2035 as ministers say the deadline has \"always been ambitious\".",
+      "published": "Sat, 26 Sep 2026 16:32:42 GMT"
+    },
+    {
+      "title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+      "description": "The US president says Tehran had only put forward the proposal because it is losing the war.",
+      "published": "Sat, 26 Sep 2026 18:17:12 GMT"
+    },
+    {
+      "title": "UK diesel price close to all-time high",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "description": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body.",
+      "published": "Fri, 25 Sep 2026 10:50:49 GMT"
+    },
+    {
+      "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
+      "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss",
+      "description": "Despite diplomatic niceties and gifts, little was shared on substantial issues separating the leaders.",
+      "published": "Fri, 25 Sep 2026 16:01:54 GMT"
+    },
+    {
+      "title": "US rejects pleas from OpenAI, Anthropic for global AI standards",
+      "url": "https://www.bbc.co.uk/news/articles/ck87v27vdn1po?at_medium=RSS&at_campaign=rss",
+      "description": "OpenAI's Sam Altman has called for risk evaluation standards, as have Anthropic's Dario Amodei and Hugging Face's Clement Delangue.",
+      "published": "Wed, 23 Sep 2026 22:35:14 GMT"
+    }
+  ]
 }
