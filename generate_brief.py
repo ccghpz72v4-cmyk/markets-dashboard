@@ -19,6 +19,7 @@ Never put an API key in the public HTML.
 """
 
 import datetime as dt
+import time
 import html
 import json
 import os
@@ -230,8 +231,37 @@ HEADLINES:
         method="POST",
     )
 
-    with urllib.request.urlopen(request, timeout=60) as response:
-        result = json.loads(response.read().decode("utf-8"))
+    max_attempts = 4
+    delays = [5, 15, 30]
+
+    for attempt in range(max_attempts):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                result = json.loads(response.read().decode("utf-8"))
+            break
+
+        except urllib.error.HTTPError as error:
+            if error.code not in (429, 500, 502, 503, 504):
+                raise
+
+            if attempt == max_attempts - 1:
+                raise
+
+            print(
+                f"Gemini temporarily unavailable (HTTP {error.code}). "
+                f"Retrying in {delays[attempt]} seconds..."
+            )
+            time.sleep(delays[attempt])
+
+        except urllib.error.URLError:
+            if attempt == max_attempts - 1:
+                raise
+
+            print(
+                f"Gemini connection problem. "
+                f"Retrying in {delays[attempt]} seconds..."
+            )
+            time.sleep(delays[attempt])
 
     try:
         raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
@@ -241,7 +271,6 @@ HEADLINES:
             "Gemini returned an unexpected response: "
             + json.dumps(result)[:2500]
         )
-
 def fetch_nasdaq_earnings():
     """
     Pull the next 7 calendar days from Nasdaq's public earnings calendar.
