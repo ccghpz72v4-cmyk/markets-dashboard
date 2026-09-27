@@ -35,6 +35,10 @@ DATA.mkdir(exist_ok=True)
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_FALLBACK_MODEL = os.environ.get(
+    "GEMINI_FALLBACK_MODEL",
+    "gemini-3.1-flash-lite"
+)
 
 WATCHLIST = {
     "AAPL": "Apple",
@@ -215,61 +219,98 @@ HEADLINES:
         }
     }
 
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"{urllib.parse.quote(GEMINI_MODEL, safe='')}:generateContent"
-        f"?key={urllib.parse.quote(GEMINI_API_KEY)}"
-    )
+    def request_model(model_name, delays):
+        url = (
+            "https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{urllib.parse.quote(model_name, safe='')}:generateContent"
+            f"?key={urllib.parse.quote(GEMINI_API_KEY)}"
+        )
 
-    request = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": "MarketsDashboard/1.0"
-        },
-        method="POST",
-    )
+        max_attempts = len(delays) + 1
 
-    max_attempts = 4
-    delays = [5, 15, 30]
-
-    for attempt in range(max_attempts):
-        try:
-            with urllib.request.urlopen(request, timeout=60) as response:
-                result = json.loads(response.read().decode("utf-8"))
-            break
-
-        except urllib.error.HTTPError as error:
-            if error.code not in (429, 500, 502, 503, 504):
-                raise
-
-            if attempt == max_attempts - 1:
-                raise
-
-            print(
-                f"Gemini temporarily unavailable (HTTP {error.code}). "
-                f"Retrying in {delays[attempt]} seconds..."
+        for attempt in range(max_attempts):
+            request = urllib.request.Request(
+                url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={
+                    "Content-Type": "application/json",
+                    "User-Agent": "MarketsDashboard/1.0"
+                },
+                method="POST",
             )
-            time.sleep(delays[attempt])
 
-        except urllib.error.URLError:
-            if attempt == max_attempts - 1:
-                raise
+            try:
+                with urllib.request.urlopen(request, timeout=60) as response:
+                    result = json.loads(response.read().decode("utf-8"))
 
-            print(
-                f"Gemini connection problem. "
-                f"Retrying in {delays[attempt]} seconds..."
-            )
-            time.sleep(delays[attempt])
+                try:
+                    raw = (
+                        result["candidates"][0]["content"]["parts"][0]["text"]
+                        .strip()
+                    )
+                    return json.loads(raw)
+
+                except Exception:
+                    raise RuntimeError(
+                        "Gemini returned an unexpected response: "
+                        + json.dumps(result)[:2500]
+                    )
+
+            except urllib.error.HTTPError as error:
+                if error.code not in (429, 500, 502, 503, 504):
+                    raise
+
+                if attempt == max_attempts - 1:
+                    raise
+
+                delay = delays[attempt]
+
+                print(
+                    f"{model_name} temporarily unavailable "
+                    f"(HTTP {error.code}). "
+                    f"Retrying in {delay} seconds..."
+                )
+
+                time.sleep(delay)
+
+            except urllib.error.URLError as error:
+                if attempt == max_attempts - 1:
+                    raise
+
+                delay = delays[attempt]
+
+                print(
+                    f"{model_name} connection problem: {error}. "
+                    f"Retrying in {delay} seconds..."
+                )
+
+                time.sleep(delay)
+
+    primary_delays = [10, 60, 180]
+    fallback_delays = [30, 120, 300]
 
     try:
-        raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
-        return json.loads(raw)
-    except Exception:
-        raise RuntimeError(
-            "Gemini returned an unexpected response: "
-            + json.dumps(result)[:2500]
+        print(f"Trying primary Gemini model: {GEMINI_MODEL}")
+
+        return request_model(
+            GEMINI_MODEL,
+            primary_delays
+        )
+
+    except (urllib.error.HTTPError, urllib.error.URLError) as primary_error:
+        print(
+            f"Primary model {GEMINI_MODEL} failed after retries: "
+            f"{primary_error}"
+        )
+
+        print(
+            f"Switching to fallback Gemini model: "
+            f"{GEMINI_FALLBACK_MODEL}"
+        )
+
+        return request_model(
+            GEMINI_FALLBACK_MODEL,
+            fallback_delays
         )
 def fetch_nasdaq_earnings():
     """
