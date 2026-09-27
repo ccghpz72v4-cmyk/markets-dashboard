@@ -2,7 +2,8 @@ name: Update Market Brief
 
 on:
   schedule:
-    - cron: "30 6 * * 1-5"
+    - cron: "30 6 * * *"
+      timezone: "Europe/London"
 
   workflow_dispatch:
 
