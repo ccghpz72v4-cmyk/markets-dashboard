@@ -1,6 +1,18 @@
 {
-  "updated_at": "2026-09-27 10:33 UTC",
+  "updated_at": "2026-09-28 05:48 UTC",
   "headlines": [
+    {
+      "title": "Healey to promise 'new age of industrialisation' for UK in conference speech",
+      "url": "https://www.bbc.co.uk/news/articles/cjdx53edkglgo?at_medium=RSS&at_campaign=rss",
+      "description": "The chancellor will unveil policies aimed at boosting British shipbuilding in his speech to Labour's annual conference on Monday.",
+      "published": "Sun, 27 Sep 2026 23:01:47 GMT"
+    },
+    {
+      "title": "Avanti West Coast services to be nationalised from March",
+      "url": "https://www.bbc.co.uk/news/articles/c60qxk7d2539o?at_medium=RSS&at_campaign=rss",
+      "description": "The move is part of a plan to improve rail infrastructure, cut train delays and improve experiences for passengers.",
+      "published": "Mon, 28 Sep 2026 03:05:50 GMT"
+    },
     {
       "title": "Heathrow Airport warns third runway could be delayed by four years",
       "url": "https://www.bbc.co.uk/news/articles/crx2zz401935o?at_medium=RSS&at_campaign=rss",
@@ -8,28 +20,16 @@
       "published": "Sat, 26 Sep 2026 16:32:42 GMT"
     },
     {
-      "title": "Sir David Beckham nets £38.5m after World Cup ad deals",
-      "url": "https://www.bbc.co.uk/news/articles/crkgww5j0yzwo?at_medium=RSS&at_campaign=rss",
-      "description": "His stake in DRJB Holdings has entitled him to almost half of its £85.5m in dividend payments.",
-      "published": "Fri, 25 Sep 2026 16:00:44 GMT"
+      "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
+      "url": "https://www.bbc.co.uk/news/articles/cq0m373ee0v0o?at_medium=RSS&at_campaign=rss",
+      "description": "The EU had said X \"deceives users\" by selling blue ticks without \"meaningfully verifying\" accounts.",
+      "published": "Fri, 25 Sep 2026 09:48:33 GMT"
     },
     {
       "title": "UK diesel price close to all-time high",
       "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
       "description": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body.",
       "published": "Fri, 25 Sep 2026 10:50:49 GMT"
-    },
-    {
-      "title": "Rolls-Royce signs 'multi-million' engine deal",
-      "url": "https://www.bbc.co.uk/news/articles/cmpwle47zxgyo?at_medium=RSS&at_campaign=rss",
-      "description": "The order will see 18 engines built and maintained by the company from its Derby aerospace centre.",
-      "published": "Thu, 24 Sep 2026 10:14:47 GMT"
-    },
-    {
-      "title": "Trump reveals millions of dollars' worth of share deals in big tech and AI",
-      "url": "https://www.bbc.co.uk/news/articles/c6p3kxpp8lezo?at_medium=RSS&at_campaign=rss",
-      "description": "Stock in major firms such as Microsoft, Nvidia and SpaceX was bought and sold on behalf of the US president.",
-      "published": "Wed, 23 Sep 2026 16:42:47 GMT"
     }
   ]
 }
