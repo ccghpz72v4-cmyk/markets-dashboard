@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-09-28 05:48 UTC",
+  "updated_at": "2026-09-29 05:48 UTC",
   "headlines": [
     {
-      "title": "Healey to promise 'new age of industrialisation' for UK in conference speech",
-      "url": "https://www.bbc.co.uk/news/articles/cjdx53edkglgo?at_medium=RSS&at_campaign=rss",
-      "description": "The chancellor will unveil policies aimed at boosting British shipbuilding in his speech to Labour's annual conference on Monday.",
-      "published": "Sun, 27 Sep 2026 23:01:47 GMT"
+      "title": "Burnham to unveil public body to invest in electricity grid",
+      "url": "https://www.bbc.co.uk/news/articles/cqn4k9nypxjro?at_medium=RSS&at_campaign=rss",
+      "description": "The prime minister will say he wants to reduce energy costs in his first conference speech as Labour leader.",
+      "published": "Tue, 29 Sep 2026 00:40:29 GMT"
+    },
+    {
+      "title": "OpenAI scraps rollout of new model over safety concerns",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
+      "description": "The firm also issued an update on incidents in which its models accessed Australian government systems.",
+      "published": "Tue, 29 Sep 2026 04:30:13 GMT"
+    },
+    {
+      "title": "UK diesel price hits all-time high, the RAC says",
+      "url": "https://www.bbc.co.uk/news/articles/c6n4k987k981o?at_medium=RSS&at_campaign=rss",
+      "description": "The US-Israel war with Iran has caused fuel prices to soar due to disruption of global oil supplies.",
+      "published": "Mon, 28 Sep 2026 20:42:56 GMT"
+    },
+    {
+      "title": "Apple ordered to pay $5.7bn after losing vibration tech patent suit",
+      "url": "https://www.bbc.co.uk/news/articles/c6je85n2vyleo?at_medium=RSS&at_campaign=rss",
+      "description": "Audio firm Taction Technology claimed Apple infringed its patents for tech used to power device vibrations.",
+      "published": "Mon, 28 Sep 2026 11:16:08 GMT"
     },
     {
       "title": "Avanti West Coast services to be nationalised from March",
       "url": "https://www.bbc.co.uk/news/articles/c60qxk7d2539o?at_medium=RSS&at_campaign=rss",
       "description": "The move is part of a plan to improve rail infrastructure, cut train delays and improve experiences for passengers.",
-      "published": "Mon, 28 Sep 2026 03:05:50 GMT"
-    },
-    {
-      "title": "Heathrow Airport warns third runway could be delayed by four years",
-      "url": "https://www.bbc.co.uk/news/articles/crx2zz401935o?at_medium=RSS&at_campaign=rss",
-      "description": "The UK's busiest airport cautions it may miss the government target of 2035 as ministers say the deadline has \"always been ambitious\".",
-      "published": "Sat, 26 Sep 2026 16:32:42 GMT"
-    },
-    {
-      "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
-      "url": "https://www.bbc.co.uk/news/articles/cq0m373ee0v0o?at_medium=RSS&at_campaign=rss",
-      "description": "The EU had said X \"deceives users\" by selling blue ticks without \"meaningfully verifying\" accounts.",
-      "published": "Fri, 25 Sep 2026 09:48:33 GMT"
-    },
-    {
-      "title": "UK diesel price close to all-time high",
-      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
-      "description": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body.",
-      "published": "Fri, 25 Sep 2026 10:50:49 GMT"
+      "published": "Mon, 28 Sep 2026 12:52:56 GMT"
     }
   ]
 }
