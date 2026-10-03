@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-10-02 05:45 UTC",
+  "updated_at": "2026-10-03 05:53 UTC",
   "headlines": [
     {
-      "title": "US pressures Europe over diesel reserves as Trump threatens export ban",
-      "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
-      "description": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.",
-      "published": "Fri, 02 Oct 2026 05:26:06 GMT"
+      "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
+      "description": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
+      "published": "Sat, 03 Oct 2026 04:38:31 GMT"
+    },
+    {
+      "title": "UK diesel prices top £2 a litre for first time, RAC says",
+      "url": "https://www.bbc.co.uk/news/articles/crn8e86y5n0zo?at_medium=RSS&at_campaign=rss",
+      "description": "The rise in global oil prices has been pushing up the pump prices of petrol and diesel in the UK.",
+      "published": "Fri, 02 Oct 2026 15:50:05 GMT"
+    },
+    {
+      "title": "US jobs market sees sharp slowdown ahead of midterm elections",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6gg0642yo?at_medium=RSS&at_campaign=rss",
+      "description": "Unemployment rose slightly as American employers paused hiring with midterm elections just a month away.",
+      "published": "Fri, 02 Oct 2026 14:30:48 GMT"
+    },
+    {
+      "title": "OpenAI fires workers for 'mishandling sensitive information'",
+      "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
+      "description": "The former employees were investigated for sharing data with an outside AI evaluation group.",
+      "published": "Fri, 02 Oct 2026 08:20:32 GMT"
     },
     {
       "title": "AI boom could trigger market shocks, Bank of England boss warns",
       "url": "https://www.bbc.co.uk/news/articles/cv8e30enrkxyo?at_medium=RSS&at_campaign=rss",
       "description": "Andrew Bailey says the central bank is watching the waves of cash being invested in artificial intelligence \"very carefully\".",
       "published": "Thu, 01 Oct 2026 10:05:25 GMT"
-    },
-    {
-      "title": "Household energy bills forecast to see biggest rise in four years",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0zvj4m1myo?at_medium=RSS&at_campaign=rss",
-      "description": "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast.",
-      "published": "Wed, 30 Sep 2026 14:36:45 GMT"
-    },
-    {
-      "title": "Greggs to shut four factories and cut 740 jobs",
-      "url": "https://www.bbc.co.uk/news/articles/cm7802ylq973o?at_medium=RSS&at_campaign=rss",
-      "description": "The company says it needs to \"keep evolving alongside changing customer expectations\".",
-      "published": "Wed, 30 Sep 2026 15:03:22 GMT"
-    },
-    {
-      "title": "Africa's richest man launches Kenya oil refinery despite land protests",
-      "url": "https://www.bbc.co.uk/news/articles/cmkg8dpwy25po?at_medium=RSS&at_campaign=rss",
-      "description": "The Kenya refinery is part of Dangote's ambitious bid to expand and help industralise Africa by 2030.",
-      "published": "Thu, 01 Oct 2026 07:04:27 GMT"
     }
   ]
 }
