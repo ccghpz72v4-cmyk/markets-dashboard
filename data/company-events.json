@@ -1,10 +1,16 @@
 {
-  "updated_at": "2026-10-06 05:50 UTC",
+  "updated_at": "2026-10-07 05:47 UTC",
   "events": [
     {
       "date": "2026-10-13",
       "company": "JPMorgan",
       "symbol": "JPM",
+      "session": "time-pre-market"
+    },
+    {
+      "date": "2026-10-14",
+      "company": "ASML",
+      "symbol": "ASML",
       "session": "time-pre-market"
     }
   ]
