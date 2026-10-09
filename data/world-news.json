@@ -1,17 +1,23 @@
 {
-  "updated_at": "2026-10-08 05:46 UTC",
+  "updated_at": "2026-10-09 05:51 UTC",
   "headlines": [
+    {
+      "title": "Nvidia-backed AI data centre firm scraps landmark listing over market fears",
+      "url": "https://www.bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&at_campaign=rss",
+      "description": "Firmus said it had made the decision due to \"recent market volatility and prevailing market conditions\".",
+      "published": "Fri, 09 Oct 2026 04:06:23 GMT"
+    },
+    {
+      "title": "White House blocks Microsoft from foreign worker hiring programme",
+      "url": "https://www.bbc.co.uk/news/articles/ck5yngl2y4gpo?at_medium=RSS&at_campaign=rss",
+      "description": "An international visa programme has for years allowed US tech companies to hire highly skilled workers from abroad.",
+      "published": "Thu, 08 Oct 2026 21:37:35 GMT"
+    },
     {
       "title": "AI chip boom pushes Samsung profits to record $80bn",
       "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss",
       "description": "The tech giant is also expected to get a boost from its latest folding devices that were launched in August.",
       "published": "Thu, 08 Oct 2026 01:59:54 GMT"
-    },
-    {
-      "title": "Japan beer giants raided over alleged price-fixing cartel",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&at_campaign=rss",
-      "description": "Asahi, Sapporo, Kirin and Suntory confirmed to the BBC that their premises had been searched by the Japanese competition authority.",
-      "published": "Thu, 08 Oct 2026 00:53:46 GMT"
     },
     {
       "title": "Boots sold in £7bn deal to Canadian billionaire family",
@@ -20,16 +26,10 @@
       "published": "Wed, 07 Oct 2026 17:18:30 GMT"
     },
     {
-      "title": "Ex-bankers jailed for rigging rates have convictions quashed",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-      "description": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-      "published": "Wed, 07 Oct 2026 13:52:13 GMT"
-    },
-    {
-      "title": "Royal Mail plans to cut 2,500 jobs",
-      "url": "https://www.bbc.co.uk/news/articles/cwvgdld13e3eo?at_medium=RSS&at_campaign=rss",
-      "description": "The postal service firm wants to cut head office and other non-frontline jobs by the end of 2027.",
-      "published": "Wed, 07 Oct 2026 12:25:46 GMT"
+      "title": "Asahi and Kirin among Japan beer giants raided over alleged price-fixing cartel",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&at_campaign=rss",
+      "description": "Japan's Fair Trade Commission conducted searches of the country's largest beer-makers.",
+      "published": "Thu, 08 Oct 2026 00:53:46 GMT"
     }
   ]
 }
