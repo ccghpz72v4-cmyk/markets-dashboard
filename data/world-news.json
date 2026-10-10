@@ -1,11 +1,23 @@
 {
-  "updated_at": "2026-10-09 05:51 UTC",
+  "updated_at": "2026-10-10 05:45 UTC",
   "headlines": [
     {
-      "title": "Nvidia-backed AI data centre firm scraps landmark listing over market fears",
-      "url": "https://www.bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&at_campaign=rss",
-      "description": "Firmus said it had made the decision due to \"recent market volatility and prevailing market conditions\".",
-      "published": "Fri, 09 Oct 2026 04:06:23 GMT"
+      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+      "description": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
+      "published": "Sat, 10 Oct 2026 04:38:20 GMT"
+    },
+    {
+      "title": "Boots has a new owner: Three ways it could affect you",
+      "url": "https://www.bbc.co.uk/news/articles/c63djxry8124o?at_medium=RSS&at_campaign=rss",
+      "description": "The stalwart of Britain's High Street has been sold to a Canadian billionaire family. What will that mean for you?",
+      "published": "Fri, 09 Oct 2026 23:01:14 GMT"
+    },
+    {
+      "title": "'Airlines sound alarm on costs crisis' and 'King's £1.5m bailout'",
+      "url": "https://www.bbc.co.uk/news/articles/cjly0el6r7lzo?at_medium=RSS&at_campaign=rss",
+      "description": "The weekend edition of the Financial Times highlights what it is calling a \"mounting crisis\" for airlines.",
+      "published": "Sat, 10 Oct 2026 04:58:37 GMT"
     },
     {
       "title": "White House blocks Microsoft from foreign worker hiring programme",
@@ -14,22 +26,10 @@
       "published": "Thu, 08 Oct 2026 21:37:35 GMT"
     },
     {
-      "title": "AI chip boom pushes Samsung profits to record $80bn",
-      "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss",
-      "description": "The tech giant is also expected to get a boost from its latest folding devices that were launched in August.",
-      "published": "Thu, 08 Oct 2026 01:59:54 GMT"
-    },
-    {
-      "title": "Boots sold in £7bn deal to Canadian billionaire family",
-      "url": "https://www.bbc.co.uk/news/articles/cwly0jyk2vl5o?at_medium=RSS&at_campaign=rss",
-      "description": "The sale of the High Street chain was announced on Wednesday.",
-      "published": "Wed, 07 Oct 2026 17:18:30 GMT"
-    },
-    {
-      "title": "Asahi and Kirin among Japan beer giants raided over alleged price-fixing cartel",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&at_campaign=rss",
-      "description": "Japan's Fair Trade Commission conducted searches of the country's largest beer-makers.",
-      "published": "Thu, 08 Oct 2026 00:53:46 GMT"
+      "title": "Nvidia-backed data centre firm scraps IPO as AI valuation concerns deepen",
+      "url": "https://www.bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&at_campaign=rss",
+      "description": "Firmus said it had made the decision due to \"recent market volatility and prevailing market conditions\".",
+      "published": "Fri, 09 Oct 2026 07:14:30 GMT"
     }
   ]
 }
