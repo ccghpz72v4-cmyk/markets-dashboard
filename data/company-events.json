@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-13 05:49 UTC",
+  "updated_at": "2026-10-17 05:55 UTC",
   "events": [
     {
-      "date": "2026-10-13",
-      "company": "JPMorgan",
-      "symbol": "JPM",
-      "session": "time-pre-market"
+      "date": "2026-10-21",
+      "company": "Meta",
+      "symbol": "META",
+      "session": "time-after-hours"
     },
     {
-      "date": "2026-10-14",
-      "company": "ASML",
-      "symbol": "ASML",
-      "session": "time-pre-market"
+      "date": "2026-10-21",
+      "company": "Tesla",
+      "symbol": "TSLA",
+      "session": "time-after-hours"
     }
   ]
 }
