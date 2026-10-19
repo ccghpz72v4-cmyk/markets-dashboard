@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-10-18 05:55 UTC",
+  "updated_at": "2026-10-19 06:02 UTC",
   "headlines": [
     {
-      "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
-      "url": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&at_campaign=rss",
-      "description": "Disorder broke out in cities across the country on a day in which more than half a million joined cost of living protests.",
-      "published": "Sat, 17 Oct 2026 20:52:17 GMT"
+      "title": "Home sellers cut asking prices on 3,000 properties a day",
+      "url": "https://www.bbc.co.uk/news/articles/c84g13z6xx4eo?at_medium=RSS&at_campaign=rss",
+      "description": "More property asking prices are being cut than at any time in 15 years, data shared with the BBC shows.",
+      "published": "Sun, 18 Oct 2026 23:00:45 GMT"
+    },
+    {
+      "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+      "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&at_campaign=rss",
+      "description": "The announcement comes as Anthropic lays the ground for a blockbuster stock market listing.",
+      "published": "Mon, 19 Oct 2026 04:30:59 GMT"
+    },
+    {
+      "title": "Microsoft pulls out of UK's largest AI data centre",
+      "url": "https://www.bbc.co.uk/news/articles/c9m26kl5y7epo?at_medium=RSS&at_campaign=rss",
+      "description": "Tech firm Nscale says it is still committed to building the site in Essex.",
+      "published": "Sun, 18 Oct 2026 16:46:42 GMT"
+    },
+    {
+      "title": "China's growth accelerates as AI export boom outweighs domestic weakness",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&at_campaign=rss",
+      "description": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook.",
+      "published": "Mon, 19 Oct 2026 05:17:35 GMT"
     },
     {
       "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
       "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
       "description": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
       "published": "Fri, 16 Oct 2026 05:00:17 GMT"
-    },
-    {
-      "title": "AI giant Anthropic woos potential investors ahead of stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo?at_medium=RSS&at_campaign=rss",
-      "description": "It comes as some investors have become concerned about the amount of money being spent on AI infrastructure.",
-      "published": "Thu, 15 Oct 2026 11:34:55 GMT"
-    },
-    {
-      "title": "Healey says surprise UK growth is 'sign of resilience' ahead of Budget",
-      "url": "https://www.bbc.co.uk/news/articles/ck8dz1me439no?at_medium=RSS&at_campaign=rss",
-      "description": "The economy grew by 0.1% in August, defying analysts' expectations of a slight contraction.",
-      "published": "Thu, 15 Oct 2026 13:25:17 GMT"
-    },
-    {
-      "title": "Netflix to shed 1,000 jobs in steepest cuts since 2022",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&at_campaign=rss",
-      "description": "The cuts equate to around 6% of the streaming giant's total workforce worldwide.",
-      "published": "Wed, 14 Oct 2026 16:47:32 GMT"
     }
   ]
 }
