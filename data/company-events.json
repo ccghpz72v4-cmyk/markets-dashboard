@@ -1,16 +1,52 @@
 {
-  "updated_at": "2026-10-19 06:02 UTC",
+  "updated_at": "2026-10-27 07:23 UTC",
   "events": [
     {
-      "date": "2026-10-21",
-      "company": "Meta",
-      "symbol": "META",
+      "date": "2026-10-27",
+      "company": "HSBC",
+      "symbol": "HSBC",
+      "session": "time-not-supplied"
+    },
+    {
+      "date": "2026-10-27",
+      "company": "Visa",
+      "symbol": "V",
       "session": "time-after-hours"
     },
     {
-      "date": "2026-10-21",
-      "company": "Tesla",
-      "symbol": "TSLA",
+      "date": "2026-10-28",
+      "company": "Alphabet",
+      "symbol": "GOOGL",
+      "session": "time-after-hours"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "Microsoft",
+      "symbol": "MSFT",
+      "session": "time-after-hours"
+    },
+    {
+      "date": "2026-10-29",
+      "company": "Amazon",
+      "symbol": "AMZN",
+      "session": "time-after-hours"
+    },
+    {
+      "date": "2026-10-29",
+      "company": "Shell",
+      "symbol": "SHEL",
+      "session": "time-pre-market"
+    },
+    {
+      "date": "2026-10-30",
+      "company": "AstraZeneca",
+      "symbol": "AZN",
+      "session": "time-pre-market"
+    },
+    {
+      "date": "2026-11-02",
+      "company": "Apple",
+      "symbol": "AAPL",
       "session": "time-after-hours"
     }
   ]
