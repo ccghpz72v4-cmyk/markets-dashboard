@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-07 13:31 UTC",
+  "updated_at": "2026-11-09 16:50 UTC",
   "headlines": [
     {
-      "title": "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
-      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o?at_medium=RSS&at_campaign=rss",
-      "description": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions.",
-      "published": "Sat, 07 Nov 2026 01:41:36 GMT"
+      "title": "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+      "url": "https://www.bbc.co.uk/news/articles/c3dxw10rjn9no?at_medium=RSS&at_campaign=rss",
+      "description": "Jensen Huang also admitted to having been \"unfaithful\" to his wife and says he will cooperate with a security investigation.",
+      "published": "Mon, 09 Nov 2026 15:42:30 GMT"
     },
     {
       "title": "Interest rates hiked to 4% in first increase in over three years",
@@ -14,22 +14,22 @@
       "published": "Thu, 05 Nov 2026 17:09:55 GMT"
     },
     {
+      "title": "Government's EV targets expected to be reduced this week",
+      "url": "https://www.bbc.co.uk/news/articles/cqkg5g2970epo?at_medium=RSS&at_campaign=rss",
+      "description": "New petrol or diesel cars are due to be phased out by 2030 and by 2035 all new cars must be zero emission.",
+      "published": "Mon, 09 Nov 2026 12:06:22 GMT"
+    },
+    {
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "description": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
+      "published": "Fri, 06 Nov 2026 18:32:16 GMT"
+    },
+    {
       "title": "Second buyer makes rescue bid for Poundland as retailer faces collapse",
       "url": "https://www.bbc.co.uk/news/articles/c6lykq0kqwn7o?at_medium=RSS&at_campaign=rss",
       "description": "A little-known investment group has made a bid to buy the business.",
       "published": "Thu, 05 Nov 2026 09:46:32 GMT"
-    },
-    {
-      "title": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
-      "url": "https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&at_campaign=rss",
-      "description": "The food deal, ahead of a UK-EU summit later this month, is the most significant part of the so-called Brexit reset agreed so far.",
-      "published": "Tue, 03 Nov 2026 20:53:03 GMT"
-    },
-    {
-      "title": "Canva announces major job cuts after 'our hardest year yet'",
-      "url": "https://www.bbc.co.uk/news/articles/cw77pg7neydmo?at_medium=RSS&at_campaign=rss",
-      "description": "CEO Melanie Perkins says more than 1,000 staff will either lose their jobs or be asked to change roles.",
-      "published": "Wed, 04 Nov 2026 00:09:35 GMT"
     }
   ]
 }
