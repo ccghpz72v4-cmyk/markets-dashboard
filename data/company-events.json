@@ -1,4 +1,11 @@
 {
-  "updated_at": "2026-11-10 15:16 UTC",
-  "events": []
+  "updated_at": "2026-11-16 16:25 UTC",
+  "events": [
+    {
+      "date": "2026-11-17",
+      "company": "Nvidia",
+      "symbol": "NVDA",
+      "session": "time-after-hours"
+    }
+  ]
 }
